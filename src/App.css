@@ -1,0 +1,100 @@
+#root {
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255,0,0,1));
+  margin: 0 auto;
+  padding: 5px;
+  text-align: center;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: black;
+
+}
+
+.price-cards-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+
+}
+
+.price-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+  width: 250px;
+  margin: 20px;
+  box-shadow: 0px 2px 4px rgba(255, 255, 255, 0.281);
+}
+
+.features-list {
+  border-top: 1px solid rgb(216, 212, 212);
+  font-weight: 600;
+  text-align: left;
+  list-style-type: none;
+  padding: 0;
+}
+
+.plan-name {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.price {
+  font-size: 2rem;
+ 
+  margin-bottom: 15px;
+  
+}
+
+
+.features-list li {
+  margin-bottom: 5px;
+}
+
+.subscribe-button {
+  background-color: #007bff;
+  width: 100%;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-top: 15px;
+}
+
+.subscribe-button:hover {
+  background-color: #0056b3;
+}
+
+.not-available .feature-name {
+  color: #fffefe69;
+
+}
+
+.cross-mark {
+  color: #fffefe69;
+}
+
+@media (max-width: 768px) {
+  .price-cards-container {
+    flex-direction: column;
+    /* Stack cards vertically */
+    align-items: center;
+    /* Center cards vertically */
+  }
+
+  .price-card {
+    width: 100%;
+    /* Full width for cards on smaller screens */
+    margin: 10px 0;
+    /* Adjust margin for spacing */
+  }
+}
